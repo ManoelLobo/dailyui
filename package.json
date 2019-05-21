@@ -1,0 +1,26 @@
+{
+  "name": "dailyui",
+  "version": "1.0.0",
+  "description": "A series of daily challenges to improve my UI skills",
+  "author": {
+    "name": "Manoel",
+    "email": "manoel.lobo@gmail.com",
+    "url": "https://manoel.tech"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -c .storybook -o build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@storybook/addon-a11y": "^5.0.11",
+    "@storybook/react": "^5.0.11",
+    "babel-loader": "^8.0.6"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
