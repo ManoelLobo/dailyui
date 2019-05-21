@@ -1,4 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('btn', module).add('Nothing here', () => <button>Ok</button>);
+import SignUp from '../src/components/001-signup';
+
+storiesOf('DailyUI #001', module).add('SignUp', () => (
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <SignUp />
+  </div>
+));
