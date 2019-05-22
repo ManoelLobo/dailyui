@@ -11,20 +11,36 @@ const SignUp = () => (
 
       <span>Sign up with your social accounts</span>
       <div className="social-buttons">
-        <FaGoogle />
-        <FaFacebookF />
+        <a href="/">
+          <span>Join with yor Google account</span>
+          <FaGoogle aria-hidden />
+        </a>
+        <a href="/">
+          <span>Join with yor Facebook account</span>
+          <FaFacebookF aria-hidden />
+        </a>
       </div>
     </div>
     <div className="email-signup">
       <form>
         Or use your email
         <Field>
-          <input id="email" name="email" type="email" />
           <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@yourmail.com"
+          />
         </Field>
         <Field>
-          <input id="password" name="password" type="password" />
           <label htmlFor="password">Password</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="********"
+          />
         </Field>
         <button>Sign Up</button>
       </form>
