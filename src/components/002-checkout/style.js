@@ -33,7 +33,7 @@ export const Header = styled.header`
 
   .user-email {
     font-size: 0.7rem;
-    color: ${gray[600]};
+    color: ${gray[700]};
   }
 `;
 
