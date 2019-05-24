@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { gray } from '../../style/colors';
+import { gray, primary } from '../../style/colors';
 
 export const Container = styled.div`
   width: 300px;
@@ -26,6 +26,7 @@ export const Header = styled.header`
 
   h1 {
     font-size: 1rem;
+    color: ${primary[600]};
   }
 
   hr {
@@ -85,6 +86,19 @@ export const Main = styled.main`
       display: flex;
       width: 100%;
       flex-direction: row;
+    }
+
+    button {
+      background: ${primary[500]};
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      box-shadow: 1px 1px 2px ${primary[300]}, 2px 2px 5px ${primary[200]};
+
+      color: ${primary[100]};
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
     }
   }
 

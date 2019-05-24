@@ -44,6 +44,45 @@ const Checkout = () => (
         </div>
 
         <hr />
+
+        <label htmlFor="card">Card #</label>
+        <input
+          type="number"
+          min="1000000000000000"
+          max="9999999999999999"
+          name="card"
+          id="card"
+          className="first-liner"
+          placeholder="Card number"
+        />
+
+        <div className="halfer">
+          <label htmlFor="expiry">Expiry date</label>
+          <input
+            type="text"
+            pattern="\d\d\/\d\d"
+            maxLength={5}
+            name="expiry"
+            id="expiry"
+            placeholder="12/12"
+            className="bottom-liner-left"
+          />
+
+          <label htmlFor="cvc">Card Verification Code</label>
+          <input
+            type="number"
+            min="100"
+            max="999"
+            name="cvc"
+            id="cvc"
+            placeholder="CVC"
+            className="bottom-liner-right"
+          />
+        </div>
+
+        <hr />
+
+        <button type="button">Confirm purchase</button>
       </form>
     </Main>
   </Container>
