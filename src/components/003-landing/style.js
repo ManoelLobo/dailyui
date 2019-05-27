@@ -28,11 +28,35 @@ export const Main = styled.main`
 `;
 
 export const Header = styled.header`
+  display: flex;
+  flex-direction: column;
   flex: 3;
   padding: 20px;
 
-  background: ${secondary[400]};
+  background: ${secondary[600]};
   color: ${secondary[100]};
+
+  font-size: 1.2rem;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  div {
+    display: flex;
+    flex: 1;
+
+    .page-title {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .illustration {
+      align-items: center;
+      font-size: 8rem;
+      color: ${primary[500]};
+    }
+  }
 `;
 
 export const SignUp = styled.div`
