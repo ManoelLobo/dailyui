@@ -10,16 +10,16 @@ export const primary = {
   900: '#00150C',
 };
 
-export const secundary = {
-  100: '',
-  200: '',
-  300: '',
-  400: '',
-  500: '',
-  600: '',
-  700: '',
-  800: '',
-  900: '',
+export const secondary = {
+  100: '#F5FEFF',
+  200: '#B8F5FF',
+  300: '#7AE8FF',
+  400: '#3DD6FF',
+  500: '#00BFFF',
+  600: '#009AE6',
+  700: '#0078CC',
+  800: '#0059B3',
+  900: '#003E99',
 };
 
 export const gray = {
