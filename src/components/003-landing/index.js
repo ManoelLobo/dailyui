@@ -41,7 +41,37 @@ const LandingPage = () => (
         </span>
       </Main>
     </Content>
-    <SignUp>FORM</SignUp>
+    <SignUp>
+      <h2>Get your free eBook</h2>
+      <form>
+        <label htmlFor="name">Your best name</label>
+        <input type="text" name="name" id="name" />
+
+        <label htmlFor="email">Your best email</label>
+        <input type="text" name="email" id="email" />
+
+        <label htmlFor="selection1">Your best choice</label>
+        <select name="selection1" id="selection1">
+          <option value="1">This</option>
+          <option value="2">That</option>
+        </select>
+
+        <label htmlFor="company">Your best company name</label>
+        <input type="text" name="company" id="company" />
+
+        <label htmlFor="captcha">Are you a robot?</label>
+        <input type="text" name="captcha" id="captcha" />
+
+        <button type="button">I want this eBook</button>
+      </form>
+      <span className="disclaimer">
+        <p>
+          We promise we won't use your data for anything and you will not
+          receive any eBook, according to our non-existing{' '}
+          <a href="/">Terms of Service</a>
+        </p>
+      </span>
+    </SignUp>
   </Container>
 );
 

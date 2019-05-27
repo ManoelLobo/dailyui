@@ -86,4 +86,42 @@ export const SignUp = styled.div`
 
   background: ${primary[700]};
   color: ${primary[200]};
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  form {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    select {
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 0;
+      border-radius: 3px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 1rem;
+      border: 0;
+      border-radius: 5px;
+      color: ${primary[800]};
+      background: ${primary[200]};
+      box-shadow: 1px 1px 2px ${primary[400]};
+    }
+  }
+
+  .disclaimer {
+    font-size: 0.6rem;
+
+    a {
+      color: ${primary[300]};
+    }
+  }
 `;
