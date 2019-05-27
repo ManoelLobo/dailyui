@@ -20,17 +20,37 @@ export const Content = styled.div`
 `;
 
 export const Main = styled.main`
+  display: flex;
   flex: 2;
+  flex-direction: row;
   padding: 20px;
+  justify-content: space-between;
 
-  background: ${gray[300]};
-  color: ${gray[800]};
+  background: ${gray[200]};
+
+  color: ${gray[700]};
+  font-family: Raleway, sans-serif;
+  font-size: 0.75rem;
+
+  span {
+    flex: 1;
+    margin-right: 20px;
+
+    p,
+    ul {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+  }
 `;
 
 export const Header = styled.header`
   display: flex;
   flex-direction: column;
-  flex: 3;
+  flex: 4;
   padding: 20px;
 
   background: ${secondary[600]};
