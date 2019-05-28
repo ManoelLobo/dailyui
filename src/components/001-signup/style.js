@@ -1,20 +1,7 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import * as colors from '../../style/colors';
 
-export const GlobalStyle = createGlobalStyle`
-  html, body, * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-    html{
-    font-size: 20px;
-  }
-`;
-
 export const Container = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
   font-family: 'Lato', sans-serif;
   box-shadow: 5px 5px ${colors.primary[100]};
   border-radius: 5px;

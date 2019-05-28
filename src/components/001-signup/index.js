@@ -1,11 +1,10 @@
 import React from 'react';
 import { FaGoogle, FaFacebookF } from 'react-icons/fa';
 
-import { Container, Field, GlobalStyle } from './style';
+import { Container, Field } from './style';
 
 const SignUp = () => (
   <Container>
-    <GlobalStyle />
     <div className="social-signup">
       <h1>Join THE-APP</h1>
 

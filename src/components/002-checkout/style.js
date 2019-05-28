@@ -7,6 +7,7 @@ export const Container = styled.div`
   border-radius: 10px;
   background: ${gray[100]};
 
+  font-family: 'Lato', sans-serif;
   font-size: 0.8rem;
   color: ${gray[900]};
 

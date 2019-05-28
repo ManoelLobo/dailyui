@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { primary, secondary, gray } from '../../style/colors';
 
 export const Container = styled.div`
+  font-family: 'Lato', sans-serif;
+
   display: flex;
   flex-direction: row;
   width: 100%;

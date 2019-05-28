@@ -13,7 +13,7 @@ const LandingPage = () => (
             <span>The true story behind the bits</span>
           </div>
           <div className="illustration">
-            <FaBookDead />
+            <FaBookDead style={{ height: '50%', width: '50%' }} />
           </div>
         </div>
       </Header>
