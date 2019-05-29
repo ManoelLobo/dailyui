@@ -4,6 +4,7 @@ import { storiesOf } from '@storybook/react';
 import SignUp from '../src/components/001-signup';
 import Checkout from '../src/components/002-checkout';
 import LandingPage from '../src/components/003-landing';
+import Calculator from '../src/components/004-calculator';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -27,5 +28,11 @@ storiesOf('DailyUI #002', module).add('Credit Card Checkout', () => (
 storiesOf('DailyUI #003', module).add('Landing Page', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
     <LandingPage />
+  </div>
+));
+
+storiesOf('DailyUI #004', module).add('Calculator', () => (
+  <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+    <Calculator />
   </div>
 ));
