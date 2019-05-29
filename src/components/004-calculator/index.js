@@ -17,13 +17,13 @@ const Calc = () => (
     <button className="button-2">2</button>
     <button className="button-3">3</button>
     <button className="button-0">0</button>
+    <button className="button-decimal">.</button>
+    <button className="button-backspace">{`<`}</button>
     <button className="button-divide">/</button>
     <button className="button-multiply">x</button>
     <button className="button-subtract">-</button>
     <button className="button-sum">+</button>
     <button className="button-result">=</button>
-    <button className="button-decimal">.</button>
-    <button className="button-backspace">{`<`}</button>
   </Container>
 );
 
