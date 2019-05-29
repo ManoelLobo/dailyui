@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import 'typeface-lato';
+import 'typeface-raleway';
 
 export const GlobalStyle = createGlobalStyle`
   html {
-    @import url('https://fonts.googleapis.com/css?family=Lato|Raleway&display=swap');
     font-family: 'Lato', sans-serif;
     font-size: 20px;
   }
