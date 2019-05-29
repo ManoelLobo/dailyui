@@ -1,9 +1,11 @@
 import styled from 'styled-components';
+import { primary, secondary, gray } from '../../style/colors';
 
 export const Container = styled.div`
   width: 400px;
-  border: 1px solid red;
-
+  height: 500px;
+  background: ${primary[800]};
+  background: linear-gradient(to bottom right, ${primary[900]}, ${gray[600]});
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11,8 +13,36 @@ export const Container = styled.div`
   grid-column-gap: 3px;
   grid-row-gap: 3px;
 
+  button {
+    border: 0;
+    font-size: 1.5rem;
+
+    color: ${secondary[100]};
+  }
+
   .display {
+    display: grid;
     grid-area: 1 / 1 / 2 / 5;
+    align-content: center;
+    justify-content: end;
+    padding: 10px;
+
+    font-size: 2rem;
+    color: ${primary[100]};
+  }
+
+  .button-modifier {
+    background: ${primary[400]};
+  }
+
+  .button-operation {
+    background: ${secondary[600]};
+  }
+
+  .button-number,
+  .button-decimal,
+  .button-backspace {
+    background: ${primary[300]};
   }
 
   .button-c {
@@ -51,7 +81,7 @@ export const Container = styled.div`
     grid-area: 4 / 3 / 5 / 4;
   }
 
-  .button-3 {
+  .button-1 {
     grid-area: 5 / 1 / 6 / 2;
   }
 
@@ -59,7 +89,7 @@ export const Container = styled.div`
     grid-area: 5 / 2 / 6 / 3;
   }
 
-  .button-1 {
+  .button-3 {
     grid-area: 5 / 3 / 6 / 4;
   }
 
@@ -93,5 +123,8 @@ export const Container = styled.div`
 
   .button-result {
     grid-area: 6 / 4 / 7 / 5;
+
+    background: ${secondary[100]};
+    color: ${primary[900]};
   }
 `;
