@@ -4,10 +4,10 @@ import { primary, secondary, gray } from '../../style/colors';
 export const Container = styled.div`
   width: 400px;
   height: 500px;
-  background: ${primary[800]};
   background: linear-gradient(to bottom right, ${primary[900]}, ${gray[600]});
-  display: grid;
+  font-weight: bold;
 
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 3px;
@@ -15,9 +15,21 @@ export const Container = styled.div`
 
   button {
     border: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-family: Raleway, sans-serif;
 
     color: ${secondary[100]};
+  }
+
+  .label {
+    clip-path: inset(100%);
+    clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; /* added line */
+    width: 1px;
   }
 
   .display {
@@ -42,7 +54,11 @@ export const Container = styled.div`
   .button-number,
   .button-decimal,
   .button-backspace {
-    background: ${primary[300]};
+    background: linear-gradient(
+      to bottom right,
+      ${primary[300]},
+      ${primary[400]}
+    );
   }
 
   .button-c {
@@ -124,7 +140,7 @@ export const Container = styled.div`
   .button-result {
     grid-area: 6 / 4 / 7 / 5;
 
-    background: ${secondary[100]};
+    background: linear-gradient(${secondary[100]}, ${gray[200]});
     color: ${primary[900]};
   }
 `;
