@@ -5,6 +5,7 @@ import SignUp from '../src/components/001-signup';
 import Checkout from '../src/components/002-checkout';
 import LandingPage from '../src/components/003-landing';
 import Calculator from '../src/components/004-calculator';
+import Logo from '../src/components/005-logo';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -34,5 +35,11 @@ storiesOf('DailyUI #003', module).add('Landing Page', () => (
 storiesOf('DailyUI #004', module).add('Calculator', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
     <Calculator />
+  </div>
+));
+
+storiesOf('DailyUI #005', module).add('App Logo', () => (
+  <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+    <Logo />
   </div>
 ));
