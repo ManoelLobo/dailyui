@@ -6,6 +6,7 @@ import Checkout from '../src/components/002-checkout';
 import LandingPage from '../src/components/003-landing';
 import Calculator from '../src/components/004-calculator';
 import Logo from '../src/components/005-logo';
+import UserProfile from '../src/components/006-profile';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -41,5 +42,11 @@ storiesOf('DailyUI #004', module).add('Calculator', () => (
 storiesOf('DailyUI #005', module).add('App Logo', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
     <Logo />
+  </div>
+));
+
+storiesOf('DailyUI #006', module).add('User Profile', () => (
+  <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
+    <UserProfile />
   </div>
 ));
