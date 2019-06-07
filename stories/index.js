@@ -7,6 +7,7 @@ import LandingPage from '../src/components/003-landing';
 import Calculator from '../src/components/004-calculator';
 import Logo from '../src/components/005-logo';
 import UserProfile from '../src/components/006-profile';
+import Settings from '../src/components/007-settings';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -50,3 +51,5 @@ storiesOf('DailyUI #006', module).add('User Profile', () => (
     <UserProfile />
   </div>
 ));
+
+storiesOf('DailyUI #007', module).add('Settings Page', () => <Settings />);
