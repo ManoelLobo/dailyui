@@ -29,7 +29,7 @@ export const PageHeader = styled.header`
   color: ${primary[100]};
 
   a {
-    color: ${secondary[200]};
+    color: ${secondary[100]};
     text-decoration: none;
     margin: 10px;
   }
@@ -51,6 +51,19 @@ export const Content = styled.main`
   color: ${gray[900]};
   padding-top: 20px;
 
+  input,
+  select,
+  button,
+  textarea {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid ${gray[200]};
+    border-radius: 6px;
+    background: white;
+  }
+
   fieldset {
     border: 0;
     border-bottom: 2px solid ${gray[300]};
@@ -71,7 +84,7 @@ export const Content = styled.main`
         flex: 1;
 
         color: ${gray[700]};
-        font-size: 0.8rem;
+        font-size: 0.75rem;
       }
       .fields {
         display: flex;
@@ -82,16 +95,38 @@ export const Content = styled.main`
           font-weight: bold;
         }
 
-        input,
-        select {
-          margin-top: 5px;
-          margin-bottom: 20px;
-          padding: 8px;
-          font-size: 1rem;
-          border: 1px solid ${gray[200]};
-          border-radius: 6px;
-          background: white;
+        label input[type='checkbox'] {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
         }
+
+        .button-secondary {
+          background: ${gray[700]};
+          color: ${gray[100]};
+
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .form-confirmation {
+    text-align: right;
+
+    button {
+      margin-left: 10px;
+      border: 0;
+
+      &.button-primary {
+        background: ${secondary[800]};
+        color: ${secondary[100]};
+      }
+
+      &.button-cancel {
+        border: 1px solid${secondary[800]};
+        color: ${secondary[800]};
+      }
       }
     }
   }
