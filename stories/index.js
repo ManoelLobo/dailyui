@@ -9,6 +9,7 @@ import Logo from '../src/components/005-logo';
 import UserProfile from '../src/components/006-profile';
 import Settings from '../src/components/007-settings';
 import Error404 from '../src/components/008-404';
+import Player from '../src/components/009-player';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -56,3 +57,5 @@ storiesOf('DailyUI #006', module).add('User Profile', () => (
 storiesOf('DailyUI #007', module).add('Settings Page', () => <Settings />);
 
 storiesOf('DailyUI #008', module).add('404 Page', () => <Error404 />);
+
+storiesOf('DailyUI #009', module).add('Music Player', () => <Player />);
