@@ -106,5 +106,7 @@ export const Main = styled.main`
   hr {
     width: 75%;
     border: 1px solid ${gray[300]};
+    align-self: center;
+    margin: 5px;
   }
 `;
