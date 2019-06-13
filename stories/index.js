@@ -61,8 +61,18 @@ storiesOf('DailyUI #008', module).add('404 Page', () => <Error404 />);
 
 storiesOf('DailyUI #009', module).add('Music Player', () => <Player />);
 
-storiesOf('DailyUI #010', module).add('Social Share Button', () => (
-  <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
-    <Share />
-  </div>
-));
+storiesOf('#010: Social Share button', module)
+  .add('Default', () => (
+    <div
+      style={{ display: 'flex', justifyContent: 'flex-start', padding: '20px' }}
+    >
+      <Share />
+    </div>
+  ))
+  .add('Expanded', () => (
+    <div
+      style={{ display: 'flex', justifyContent: 'flex-start', padding: '20px' }}
+    >
+      <Share expanded />
+    </div>
+  ));
