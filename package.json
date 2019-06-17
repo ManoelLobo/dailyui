@@ -20,6 +20,8 @@
     "babel-loader": "^8.0.6"
   },
   "dependencies": {
+    "@reach/alert": "^0.1.5",
+    "@reach/visually-hidden": "^0.1.4",
     "rc-slider": "^8.6.13",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

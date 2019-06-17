@@ -11,6 +11,7 @@ import Settings from '../src/components/007-settings';
 import Error404 from '../src/components/008-404';
 import Player from '../src/components/009-player';
 import Share from '../src/components/010-share';
+import Flash from '../src/components/011-flash';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -76,3 +77,12 @@ storiesOf('#010: Social Share button', module)
       <Share expanded />
     </div>
   ));
+
+storiesOf('#011: Flash Message', module)
+  .add('Success', () => (
+    <Flash appearance="success">This is a success message!</Flash>
+  ))
+  .add('Failure', () => (
+    <Flash appearance="failure">This is an error message!</Flash>
+  ))
+  .add('Default', () => <Flash>This is a info message!</Flash>);

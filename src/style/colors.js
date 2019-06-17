@@ -22,6 +22,18 @@ export const secondary = {
   900: '#003E99',
 };
 
+export const adversary = {
+  100: '#FFE9DA',
+  200: '#FFD0C5',
+  300: '#FFB199',
+  400: '#FF9276',
+  500: '#F97540',
+  600: '#F35631',
+  700: '#DE3C23',
+  800: '#C52821',
+  900: '#841106',
+};
+
 export const gray = {
   100: '#FAFBFC',
   150: '#E1E5EA',
