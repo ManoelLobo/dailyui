@@ -80,9 +80,9 @@ storiesOf('#010: Social Share button', module)
 
 storiesOf('#011: Flash Message', module)
   .add('Success', () => (
-    <Flash appearance="success" message="This is a successful message!" />
+    <Flash appearance="success">This is a success message!</Flash>
   ))
   .add('Failure', () => (
-    <Flash appearance="failure" message="This is an error message!" />
+    <Flash appearance="failure">This is an error message!</Flash>
   ))
-  .add('Default', () => <Flash message="This is a info message!" />);
+  .add('Default', () => <Flash>This is a info message!</Flash>);

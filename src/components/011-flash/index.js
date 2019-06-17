@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Container } from './style';
 
-const Flash = ({ message, appearance }) => {
-  const [display, setDisplay] = useState(true);
-
-  return <Container appearance={appearance}>{message}</Container>;
+const Flash = ({ appearance, children }) => {
+  return <Container appearance={appearance}>{children}</Container>;
 };
 
 export default Flash;

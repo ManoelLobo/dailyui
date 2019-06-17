@@ -28,5 +28,4 @@ export const Container = styled(Alert)`
       ? alertStyles[props.appearance]
       : alertStyles['default']};
     };
-
 `;
