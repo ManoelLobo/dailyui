@@ -12,6 +12,7 @@ import Error404 from '../src/components/008-404';
 import Player from '../src/components/009-player';
 import Share from '../src/components/010-share';
 import Flash from '../src/components/011-flash';
+import ProductPage from '../src/components/012-ecommerce';
 
 storiesOf('DailyUI #001', module).add('SignUp', () => (
   <div style={{ display: 'flex', justifyContent: 'center', padding: '20px' }}>
@@ -86,3 +87,7 @@ storiesOf('#011: Flash Message', module)
     <Flash appearance="failure">This is an error message!</Flash>
   ))
   .add('Default', () => <Flash>This is a info message!</Flash>);
+
+storiesOf('#012: E-Commerce', module).add('Product Page', () => {
+  <ProductPage />;
+});
